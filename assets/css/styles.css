@@ -1,0 +1,249 @@
+@import "variables.css";
+@import "navbar.css";
+@import "modal.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text);
+  font-family: "Advent Pro", sans-serif;
+  font-size: calc(12px + 1vw);
+}
+
+h2 {
+  color: var(--secondary-text);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.about__text a {
+  background: #40a5cf;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.container {
+  margin: 6rem auto;
+  width: 60%;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+}
+
+.about__text {
+  flex: 3;
+  padding-left: 5rem;
+}
+
+.about__text h1 {
+  font-size: calc(21px + 5vw);
+  color: var(--secondary-text);
+}
+
+.about__bcg {
+  flex: 2;
+  width: 100%;
+}
+
+.timeline {
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline__list {
+  list-style: none;
+}
+
+.timeline__list p {
+  margin-left: 5rem;
+  color: var(--secondary-color);
+}
+
+.timeline__title {
+  display: flex;
+  margin-top: 2rem;
+}
+/*
+.timeline__title::before {
+  content: "♦";
+  margin-right: 3rem;
+}
+*/
+
+.timeline__description {
+  margin-left: 5rem;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__list div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.skills__list img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  margin-top: 5rem;
+}
+
+.card__title {
+  background: var(--primary-text);
+  color: var(--secondary-color);
+  padding: 10px 60px;
+  position: absolute;
+  z-index: 10;
+  left: -50px;
+  top: 70px;
+}
+
+.card__content {
+  position: absolute;
+  background: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.card__content a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.card__content p {
+  padding-top: 2rem;
+  padding-left: 15rem;
+}
+
+.card__thumb {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card__content:hover {
+  opacity: 0.8;
+}
+
+.card__description {
+  padding-left: 20px;
+}
+
+.card__tags {
+  position: absolute;
+  bottom: 2rem;
+  padding-left: 15rem;
+}
+
+.card__tags span {
+  font-size: 1rem;
+  margin-right: 20px;
+  opacity: 0.5;
+}
+
+.contact p {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact img {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social img {
+  width: 60px;
+}
+
+footer {
+  background: var(--primary-color);
+  height: 200px;
+  padding: 5rem 5rem;
+  text-align: center;
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.5s;
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.5s;
+}
+
+@media (max-width: 700px) {
+  .menu {
+    width: 100%;
+    top: 40px;
+    left: 0;
+    flex-direction: row;
+  }
+  .menu a {
+    height: 70px;
+    border-left: 2px solid var(--background-color);
+    display: flex;
+    justify-content: end;
+  }
+
+  section {
+    margin-top: 4rem;
+  }
+
+  .about {
+    display: block;
+  }
+  .about__text {
+    padding: 30px 0;
+    text-align: center;
+  }
+  .card__title {
+    top: 0;
+  }
+  .card__content p {
+    padding-top: 4rem;
+    padding-left: 2rem;
+  }
+  .card__tags {
+    padding-left: 2rem;
+  }
+}

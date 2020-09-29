@@ -1,0 +1,36 @@
+.menu{
+    background: var(--primary-color);
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    width: 80px;
+    font-size: .8rem;
+}
+
+.menu__list{
+    display: flex;   
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: center; 
+}
+
+.menu__list a{
+    list-style: none;
+    width: 100%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: .7;
+}
+
+.menu__list img{
+    width: 25px;
+}
+
+.menu__list a:hover{
+    background: var(--secondary-color);
+    opacity: 1;
+}

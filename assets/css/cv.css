@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: #484f79;
+  color: #fff;
+  min-width: 600px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #b4f6ff;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p,
+a {
+  font-size: 1.25rem;
+}
+
+a {
+  color: #40a5cf;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+.header img {
+  min-width: 100px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header__aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  margin: 20px 0;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.card__aside {
+  display: grid;
+  text-align: right;
+  padding: 5px 10px;
+}
+
+.card__aside span {
+  color: #b5b5b5;
+  font-size: 1.15rem;
+}
+
+.card__description {
+  padding: 10px;
+  border-left: dotted gray 2px;
+}
+
+ul {
+  padding: 0 120px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  background: #40a5cf;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #fff;
+  padding: 15px;
+  border-radius: 30px;
+  margin: 5px;
+}
+.button__fixed {
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+}
+
+.button__fixed a {
+  text-decoration: none;
+  background: #40a5cf;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+}
